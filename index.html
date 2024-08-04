@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bee Suites Tirana Apartment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+    <style>
+        :root {
+            --primary-color: #FF385C;
+            --text-color: #222222;
+            --bg-color: #FFFFFF;
+            --light-gray: #F7F7F7;
+            --accent-color: #00A699;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--bg-color);
+        }
+        .header {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+        .tagline {
+            font-size: 1.2em;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+        .location {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #717171;
+            font-size: 1em;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-rows: 250px 250px;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .gallery img:first-child {
+            grid-row: 1 / span 2;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 60px;
+        }
+        .about, .info {
+            padding: 30px 0;
+        }
+        .info {
+            background-color: var(--light-gray);
+            border-radius: 20px;
+            padding: 30px;
+            height: fit-content;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .map {
+            height: 300px;
+            background-color: var(--light-gray);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid var(--light-gray);
+            color: #717171;
+        }
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #E31C5F;
+            transform: translateY(-2px);
+        }
+        .feature-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .feature-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            font-size: 1.1em;
+        }
+        .feature-list i {
+            margin-right: 15px;
+            color: var(--accent-color);
+        }
+        .apartment-description {
+            background-color: var(--light-gray);
+            border-radius: 20px;
+            padding: 30px;
+            margin-top: 40px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .apartment-name {
+            font-size: 1.8em;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        .instagram-link {
+            display: flex;
+            align-items: center;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+        .instagram-link i {
+            margin-right: 10px;
+        }
+        @media (max-width: 768px) {
+            .content, .gallery {
+                grid-template-columns: 1fr;
+            }
+            .gallery {
+                grid-template-rows: repeat(5, 200px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Bee Suites Tirana Apartment</h1>
+        <p class="tagline">Your Urban Oasis in the Heart of Tirana</p>
+        <p class="location"><i data-feather="map-pin"></i> Central Tirana, Albania</p>
+    </header>
+
+    <div class="gallery">
+        <img src="/images/app1.jpeg" alt="Living Room">
+        <img src="/images/app2.jpeg" alt="Bedroom">
+        <img src="/images/app3.jpeg" alt="Kitchen">
+        <img src="/images/app4.jpeg" alt="Bathroom">
+        <img src="/images/app5.jpeg" alt="Balcony">
+    </div>
+
+    <div class="content">
+        <div class="about">
+            <h2>Experience Tirana Like a Local</h2>
+            <p>Welcome to Bee Suites Tirana, your luxurious home away from home in the heart of Albania's vibrant capital! Our meticulously designed apartments offer the perfect blend of comfort and style for your stay in Tirana.</p>
+            <p>Whether you're here for business or pleasure, our centrally located apartments provide the ideal base to explore the city. Enjoy modern amenities, chic decor, and the convenience of being steps away from Tirana's best attractions, restaurants, and nightlife.</p>
+            <p><em>Mi casa es tu casa! 🏠</em></p>
+            <h3>What our apartments offer</h3>
+            <ul class="feature-list">
+                <li><i data-feather="wifi"></i> High-speed Wi-Fi</li>
+                <li><i data-feather="tv"></i> 55" HDTV with Netflix</li>
+                <li><i data-feather="coffee"></i> Fully equipped kitchen</li>
+                <li><i data-feather="wind"></i> Air conditioning</li>
+                <li><i data-feather="map"></i> Prime central location</li>
+                <li><i data-feather="home"></i> Stylish, modern interiors</li>
+            </ul>
+            <div class="apartment-description">
+                <h3 class="apartment-name">🌆 Orchid: Stylish Apartment!</h3>
+                <p>Step into urban living at its finest in our Tirana apartment! Immerse yourself in city vibes while enjoying modern comfort.</p>
+                <p>🏙️ Central & Cozy: Experience the buzz of Tirana from a comfortable nest. Explore nearby cafes, attractions, and markets.</p>
+                <p>🍳 Fully Equipped: Whip up meals in the well-equipped kitchen, relax in the inviting living area, and soak in the cityscape from the balcony.</p>
+            </div>
+            <div class="apartment-description">
+                <h3 class="apartment-name">🌷 Tulip in the Heart of Tirana!</h3>
+                <p>Immerse yourself in the vibrant energy of the city while enjoying the comfort of a fully furnished apartment. Located in the bustling center of Tirana, this stylish apartment is your gateway to the best that the city has to offer.</p>
+                <p>✨ Apartment Highlights:</p>
+                <ul>
+                    <li>🛋️ Spacious and modern living area</li>
+                    <li>🍽️ Fully equipped kitchen for your culinary creations</li>
+                    <li>🛏️ Comfortable bedrooms with plush linens</li>
+                    <li>🚿 Immaculate bathroom with all essentials</li>
+                    <li>📡 High-speed Wi-Fi to stay connected</li>
+                    <li>❄️ Air-conditioning for ultimate comfort</li>
+                </ul>
+            </div>
+            <p>These are just a few examples of our apartments. We have over 12 unique properties available!</p>
+            <a href="https://www.instagram.com/bee.suites/" class="instagram-link" target="_blank">
+                <i data-feather="instagram"></i> Check out more apartments on our Instagram
+            </a>
+        </div>
+        <div class="info">
+            <h3>Discover Our Apartments</h3>
+            <p>From cozy studios to spacious multi-bedroom suites, we have the perfect apartment for your Tirana stay.</p>
+            <p><strong>Property managed by</strong></p>
+            <p>Bee Suites Tirana</p>
+            <p><i data-feather="phone"></i> +355 69 572 0038</p>
+            <p>Daily rental apartments in the heart of Tirana!</p>
+            <p>Apartamente me qera ditore, Tiranë!</p>
+            <a href="https://www.instagram.com/bee.suites/" class="btn" target="_blank">View All Apartments</a>
+        </div>
+    </div>
+
+ 
+    <footer class="footer">
+        <p>© 2024 Bee Suites Tirana. All rights reserved.</p>
+        <p>Property Management Company</p>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
